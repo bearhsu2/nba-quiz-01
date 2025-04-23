@@ -79,30 +79,19 @@ h2 {
 
 .button-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
 }
 
-#restart-button, #create-legend-button {
-    flex: 1;
-    border-radius: 8px;
-    padding: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
 #restart-button {
+    width: auto;
+    flex: 0;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.7);
-}
-
-#restart-button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.8);
-    color: white;
+    padding: 0.75rem 1.5rem;
 }
 
 .or-divider {
@@ -110,10 +99,11 @@ h2 {
     color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     font-weight: 500;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
 }
 
 #create-legend-button {
+    width: 100%;
     background-color: #2196F3;
     border: none;
     color: white;
@@ -124,7 +114,7 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     line-height: 20px;
     height: 56px;
 }

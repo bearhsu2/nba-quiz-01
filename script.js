@@ -147,8 +147,7 @@ restartButton.addEventListener('click', startQuiz);
 
 // Add event listener for the new button
 createLegendButton.addEventListener('click', () => {
-    // You can add the functionality for creating a future legend here
-    window.location.href = 'create-legend.html'; // Or whatever URL you want to direct to
+    window.open('https://lets.playdailyfantasy.com/', '_blank', 'noopener,noreferrer');
 });
 
 // Start the quiz when the page loads

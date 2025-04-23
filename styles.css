@@ -120,6 +120,26 @@ h2 {
     font-weight: bold;
     box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
     letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem 1.5rem;
+    line-height: 20px;
+    height: 48px;
+}
+
+.button-logo {
+    height: 24px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+#create-legend-button span {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #create-legend-button:hover {

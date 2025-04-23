@@ -86,22 +86,44 @@ h2 {
 
 #restart-button, #create-legend-button {
     flex: 1;
-    background-color: #4CAF50;
-    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.or-divider {
-    font-size: 1rem;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0 0.5rem;
+#restart-button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 #restart-button:hover {
-    background-color: #45a049;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+.or-divider {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 0.5rem;
+}
+
+#create-legend-button {
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+    letter-spacing: 0.5px;
 }
 
 #create-legend-button:hover {
     background-color: #1976D2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(33, 150, 243, 0.4);
 } 

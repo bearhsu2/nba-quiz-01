@@ -91,12 +91,15 @@ const restartButton = document.getElementById('restart-button');
 const playerNameElement = document.getElementById('player-name');
 const playerImageElement = document.getElementById('player-image');
 const createLegendButton = document.getElementById('create-legend-button');
+const heroImage = document.querySelector('.hero-image');
+const startContainer = document.getElementById('start-container');
 
 function startQuiz() {
     currentQuestionIndex = 0;
     totalScore = 0;
     resultContainer.classList.add('hide');
     questionContainer.style.display = 'block';
+    heroImage.style.display = 'block';
     showQuestion(questions[0]);
 }
 
@@ -132,6 +135,7 @@ function selectAnswer(answer) {
 
 function showResult() {
     questionContainer.style.display = 'none';
+    heroImage.style.display = 'none';
     resultContainer.classList.remove('hide');
 
     // Calculate which legend based on total score
@@ -143,7 +147,16 @@ function showResult() {
     playerImageElement.alt = legend.name;
 }
 
-restartButton.addEventListener('click', startQuiz);
+function restartQuiz() {
+    currentQuestionIndex = 0;
+    totalScore = 0;
+    resultContainer.classList.add('hide');
+    questionContainer.style.display = 'block';
+    heroImage.style.display = 'block';
+    showQuestion(questions[0]);
+}
+
+restartButton.addEventListener('click', restartQuiz);
 
 // Add event listener for the new button
 createLegendButton.addEventListener('click', () => {

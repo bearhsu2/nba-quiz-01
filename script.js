@@ -90,6 +90,7 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 const restartButton = document.getElementById('restart-button');
 const playerNameElement = document.getElementById('player-name');
 const playerImageElement = document.getElementById('player-image');
+const createLegendButton = document.getElementById('create-legend-button');
 
 function startQuiz() {
     currentQuestionIndex = 0;
@@ -143,6 +144,12 @@ function showResult() {
 }
 
 restartButton.addEventListener('click', startQuiz);
+
+// Add event listener for the new button
+createLegendButton.addEventListener('click', () => {
+    // You can add the functionality for creating a future legend here
+    window.location.href = 'create-legend.html'; // Or whatever URL you want to direct to
+});
 
 // Start the quiz when the page loads
 startQuiz(); 

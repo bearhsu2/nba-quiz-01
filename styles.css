@@ -77,13 +77,31 @@ h2 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-#restart-button {
-    width: 100%;
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#restart-button, #create-legend-button {
+    flex: 1;
     background-color: #4CAF50;
     border: none;
-    margin-top: 1rem;
+}
+
+.or-divider {
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 0.5rem;
 }
 
 #restart-button:hover {
     background-color: #45a049;
+}
+
+#create-legend-button:hover {
+    background-color: #1976D2;
 } 

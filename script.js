@@ -44,7 +44,7 @@ const nbaLegends = [
     },
     {
         name: "LeBron James",
-        image: "https://cdn.nba.com/manage/2021/08/lebron-james-lakers-784x523.jpg"
+        image: "legbron_james.jpg"
     },
     {
         name: "Kobe Bryant",
@@ -56,19 +56,19 @@ const nbaLegends = [
     },
     {
         name: "Larry Bird",
-        image: "https://cdn.nba.com/manage/2021/08/larry-bird-1988-784x523.jpg"
+        image: "larry_bird.png"
     },
     {
         name: "Kareem Abdul-Jabbar",
-        image: "https://cdn.nba.com/manage/2021/08/kareem-abdul-jabbar-1984-784x523.jpg"
+        image: "abdul_jabbar.png"
     },
     {
         name: "Bill Russell",
-        image: "https://cdn.nba.com/manage/2021/08/bill-russell-1969-784x523.jpg"
+        image: "bill_russell.png"
     },
     {
         name: "Wilt Chamberlain",
-        image: "https://cdn.nba.com/manage/2021/08/wilt-chamberlain-1972-784x523.jpg"
+        image: "wilt_chamberlain.png"
     },
     {
         name: "Tim Duncan",

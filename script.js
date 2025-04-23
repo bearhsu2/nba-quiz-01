@@ -72,11 +72,11 @@ const nbaLegends = [
     },
     {
         name: "Tim Duncan",
-        image: "tim_dunca.png"
+        image: "tim_duncan.png"
     },
     {
         name: "Shaquille O'Neal",
-        image: "shaq.png"
+        image: "shaq.jpg"
     }
 ];
 

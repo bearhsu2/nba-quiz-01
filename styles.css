@@ -103,7 +103,7 @@ h2 {
 }
 
 #create-legend-button {
-    width: 100%;
+    width: 80%;
     background-color: #2196F3;
     border: none;
     color: white;
@@ -113,7 +113,7 @@ h2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     padding: 1rem 2rem;
     line-height: 20px;
     height: 56px;

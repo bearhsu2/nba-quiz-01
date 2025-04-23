@@ -95,35 +95,42 @@ function startQuiz() {
     currentQuestionIndex = 0;
     totalScore = 0;
     resultContainer.classList.add('hide');
-    questionContainer.classList.remove('hide');
+    questionContainer.style.display = 'block';
     showQuestion(questions[0]);
 }
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
     answerButtonsElement.innerHTML = '';
-    question.answers.forEach(answer => {
-        const button = document.createElement('button');
-        button.innerText = answer.text;
-        button.classList.add('btn');
-        button.addEventListener('click', () => selectAnswer(answer));
-        answerButtonsElement.appendChild(button);
-    });
+    
+    // Only show options for the first 4 questions
+    if (currentQuestionIndex < 4) {
+        question.answers.forEach(answer => {
+            const button = document.createElement('button');
+            button.innerText = answer.text;
+            button.classList.add('btn');
+            button.addEventListener('click', () => selectAnswer(answer));
+            answerButtonsElement.appendChild(button);
+        });
+    } else {
+        // For questions after the 4th one, automatically show the result
+        showResult();
+    }
 }
 
 function selectAnswer(answer) {
     totalScore += answer.score;
     currentQuestionIndex++;
 
-    if (currentQuestionIndex < questions.length) {
-        showQuestion(questions[currentQuestionIndex]);
-    } else {
+    if (currentQuestionIndex === 4) {  // After answering the 4th question
         showResult();
+    } else if (currentQuestionIndex < questions.length) {
+        showQuestion(questions[currentQuestionIndex]);
     }
 }
 
 function showResult() {
-    questionContainer.classList.add('hide');
+    questionContainer.style.display = 'none';
     resultContainer.classList.remove('hide');
 
     // Calculate which legend based on total score
